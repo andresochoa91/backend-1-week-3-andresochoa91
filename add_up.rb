@@ -1,5 +1,5 @@
 puts "Enter a positive integer greater than or equal to 3. "
-puts "Enter blank space to stop the program. "
+puts "Entering blank space or invalid input will stop the program. "
 puts 
 int = gets.chomp.to_i
 puts
