@@ -1,12 +1,10 @@
 def print_full_name
-  puts "This program will close if mandatory fields are not filled out"
+  puts "\nThis program will close if mandatory fields are not filled out"
   full_name = [];
-  puts
-  print "Please enter your first name (mandatory): ";
+  print "\nPlease enter your first name (mandatory): ";
   first_name = gets.chomp
   if first_name == ""
-    puts "Invalid input"
-    puts
+    puts "\nInvalid input\n\n"
     return
   end 
   
@@ -21,22 +19,19 @@ def print_full_name
   print "Please enter your last name (mandatory): ";
   last_name = gets.chomp
   if last_name == ""
-    puts "Invalid input"
-    puts
+    puts " \nInvalid input\n\n"
     return
   end
 
   full_name.push(last_name)
-  puts
-  print "Hello "
+  print "\nHello "
   full_name.each_with_index do |name, index|
     print name
     if index != full_name.length - 1
       print " "
     else
-      print ", Welcome!"
+      print ", Welcome!\n\n"
     end
   end
-  puts
 end
 print_full_name
