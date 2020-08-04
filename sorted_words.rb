@@ -12,6 +12,6 @@ loop do
   end
 end
 
-puts "Sorted words"
+puts "Sorted words:\n\n"
+puts words.sort
 puts
-print words.sort

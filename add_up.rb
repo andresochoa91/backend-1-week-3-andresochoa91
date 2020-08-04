@@ -1,6 +1,6 @@
 puts "Enter a positive integer greater than or equal to 3. "
-puts "Entering blank space or invalid input will stop the program. "
-puts 
+puts "Entering blank space or invalid input will stop the program.\n\n"
+ 
 int = gets.chomp.to_i
 puts
 
@@ -14,4 +14,5 @@ if int >= 3
     return acc
   end
   add_up(int)  
+  puts
 end
